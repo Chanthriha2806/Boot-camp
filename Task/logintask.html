@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+                margin: 0px;;
+                padding: 1px;
+                box-sizing: border-box;
+        }
+        .container{
+                display: flex;
+                height: 100vh;
+        }
+        .left{
+                flex: 1;
+                
+                background-color: transparent;
+                
+         }
+         .right{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+         }
+         form{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(227, 229, 198);
+            width: 500px;
+            height: 300px;
+            align-items: center;
+            border-radius: 10px;
+            position: relative;
+
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .inp{
+            display: flex;
+             padding: 10px 15px;
+            border-radius: 30px;
+            align-items: center;
+            align-items: center;
+            margin: 10px 0;
+    }
+    .inp input{
+            flex:1;
+            border: none;
+            background: none;
+            outline: none;
+            padding-left: 10px;
+            
+    }
+    .extra{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin: top 10px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .extra a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        
+    }
+    body{
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        background: url(medical.jpeg)no-repeat center center;
+        background-size: cover;
+         justify-content: center;
+         align-items: center;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+    }
+
+    .banner{
+            box-shadow: 10px 10px 50px rgb(201, 130, 49);
+            position:absolute;
+            top: -27px;
+            border: 2px solid black;
+            padding: 10px;
+            height: 30px;
+            width: 200px;
+            text-align: center;
+            background-color: orange;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        button{
+                width: 100%;
+                padding: 10px;
+                background: goldenrod;
+                color: white;
+                border-radius: 30px;
+                font-size: 16px;
+                margin-top: 10px;
+                cursor: pointer;
+        }
+        
+</style>
+</head>
+<body>
+        <div class="container">
+        <div class="left">
+        </div>
+        <div class="right">
+        <form>
+        <h1>WELCOME</h1>
+        <div class="inp">
+            <i class="fa-solid fa-user"></i>
+          <input type="text"  placeholder="USER NAME">
+</div>
+<div class="inp">
+    <i class="fa-solid fa-lock"></i>
+<input type="password"  placeholder="PASSWORD">
+</div>
+<div class="extra">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#">Forgot Password</a>
+   </div>
+
+<button type="submit">Login</button>
+</form>
+</div>
+</div>
+    
+</body>
+</html>

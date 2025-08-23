@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <style>
+        form{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 300px;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+        }
+.imp{
+display: flex;
+align-items: center;
+gap: 10px;
+border: 2px solid black;
+padding: 10px;
+border-radius: 5px;
+position: relative;
+}
+.imp input{
+border: 0;
+border-radius: 20px;
+height: 100;
+width: 100;
+    }
+    .inp input:focus{
+        border: 0;
+        outline: none;
+
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .banner{
+        box-shadow: 10px 10px 50px;
+        position:absolute;
+        top: -27;
+        border: 2px solid black;
+        padding: 10px;
+        height: 30px;
+        width: 200px;
+        text-align: center;
+        background-color: orange;
+        border-radius: 20px;
+        display: flex;
+
+    }
+
+    
+
+</style>
+</head>
+<body>
+    <form>
+        <div class="imp">
+                <i class="fa-chisel fa-regular fa-circle-user"></i>
+            <input type="text" id="user" placeholder="username" />
+           </div>
+           <div class="imp">
+             <i class="fa-solid fa-lock"></i>
+             <input type="password" id="pass" placeholder="password" />
+            </div>
+           
+    </form>
+    
+</body>
+</html>
