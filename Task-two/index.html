@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin: 0px;;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(21, 21, 21);
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 95%;
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: rgb(0, 0, 0);
+}
+.nav-center img{
+    height: 86px;
+}
+.nav-right{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.nav-right a{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    transition:color 0.3s;
+    display: flex;
+}
+.nav-right a:hover{
+    color:yellow;
+}
+.nav-left{
+    color: antiquewhite;
+    font-size: 22px;
+    font-weight: bold;
+}
+ #container{
+        margin-top: 105px;
+        background-image: url('./ave1.jpg');
+        height: 100vh;
+        width: 100%;
+        background-size: contain;
+        position: relative;
+    }
+    .mini{
+        padding-left: 900px;
+        gap: 3px;
+        position:absolute;
+        top: 60%;
+        transform: translateY(-1%);
+    }
+    
+.mini img{
+    height: 60px;
+    width: 100px;
+    cursor: pointer;
+    
+
+}
+.mini img:hover{
+    box-shadow: (rgb(209, 6, 6));
+    border:1px solid rgb(255, 8, 8);
+    transition: transform 5s, box-shadow 5s;
+}
+.mini.active{
+    opacity:1;
+}
+
+.arrow{
+    position: absolute;
+    top:50%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 1px;
+    transform: translateY(-50%);
+}
+.arrow img{
+    height: 50px;
+    width: 90px;
+    cursor: pointer;
+
+}
+#arrow1{
+    transform:rotate(180deg)
+
+}
+.title1{
+    text-align: center;
+    margin: 40px 20px;
+    color: antiquewhite;
+}
+.cards1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.card1{
+    height:350px;
+    width: 250px;
+    border: 2px solid rgb(104, 216, 234);
+    background-color: rgb(234, 242, 243);
+    box-shadow: 10px 10px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+.card1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.card1:hover{
+opacity: 0.7;
+}
+
+.title2{
+    text-align: center;
+    margin: 40px 20px;
+    color: antiquewhite;
+}
+.cards2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.card2{
+    height:350px;
+    width: 250px;
+    border: 2px solid rgb(104, 216, 234);
+    background-color: rgb(234, 242, 243);
+    box-shadow: 10px 10px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+.card2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius:10px ;
+    display: block;
+}
+.card2:hover{
+opacity: 0.7;
+}
+.title3{
+    text-align: center;
+    margin: 40px 20px;
+    color: antiquewhite;
+}
+.cards3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.card3{
+    height:350px;
+    width: 250px;
+    border: 2px solid rgb(104, 216, 234);
+    background-color: rgb(234, 242, 243);
+    box-shadow: 10px 10px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+.card3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.card3:hover{
+opacity: 0.7;
+}
+.title4{
+    text-align: center;
+    margin: 40px 20px;
+    color: antiquewhite;
+}
+.cards4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.card4{
+    height:350px;
+    width: 250px;
+    border: 2px solid rgb(104, 216, 234);
+    background-color: rgb(234, 242, 243);
+    box-shadow: 10px 10px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+.card4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.card4:hover{
+opacity: 0.7;
+}
+.title5{
+    text-align: center;
+    margin: 40px 20px;
+    color: antiquewhite;
+}
+.cards5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.card5{
+     position: relative;
+    height:200px;
+    width: 250px;
+    border: 2px solid rgb(104, 216, 234);
+    background-color: rgb(234, 242, 243);
+    box-shadow: 10px 10px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+.card5 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.card5:hover{
+opacity: 0.7;
+}
+.card5.card-text{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.title6{
+    text-align: center;
+    margin: 40px 20px;
+    color: antiquewhite;
+}
+.cards6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.card6{
+    height:200px;
+    width: 250px;
+    border: 2px solid rgb(104, 216, 234);
+    background-color: rgb(234, 242, 243);
+    box-shadow: 10px 10px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card6 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+    
+.card6:hover{
+opacity: 0.7;
+}
+.title7{
+    text-align: center;
+    margin: 40px 20px;
+    color: antiquewhite;
+}
+.cards7{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.card7{
+    height:200px;
+    width: 250px;
+    border: 2px solid rgb(104, 216, 234);
+    background-color: rgb(234, 242, 243);
+    box-shadow: 10px 10px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card7 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+.card7:hover{
+opacity: 0.7;
+}
+.title8{
+    text-align: center;
+    margin: 40px 20px;
+    color: antiquewhite;
+}
+.cards8{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.card8{
+    height:200px;
+    width: 250px;
+    border: 2px solid rgb(104, 216, 234);
+    background-color: rgb(234, 242, 243);
+    box-shadow: 10px 10px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card8 img{
+    height: 99%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+.card8:hover{
+opacity: 0.7;
+}
+.bg2 {
+    margin-top: 50px;
+      background: url("./colgate.jpg") no-repeat center center/cover;
+      padding: 30px 20px;
+    }
+
+    h2 {
+        text-align: center;
+      margin-bottom: 30px;
+      color: cyan;
+    }
+
+    .cards {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.6);
+      border: 2px solid cyan;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .card img {
+        height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 100px;
+    }
+    .card:hover{
+opacity: 0.7;
+}
+    footer{
+        background-color: black;
+        color: grey;
+        padding: 40px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: auto;
+        text-align: left;
+    }
+    .footer-column{
+        flex: 1;
+        margin: 0 20px;
+     }
+     .footer-column h4{
+        color: antiquewhite;
+        margin-bottom: 10px;
+        font-size: 16px;
+     }
+     .footer-column p{
+        margin: 6px 0;
+        cursor: pointer;
+     }
+     .footer-column p:hover{
+        color:yellow;
+     }
+.footer-bottom{
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid;
+    padding-top: 15px;
+    font-size: 14px;
+}
+.Textover{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color:white ;
+    max-width: 400px;
+}
+.Textover h1{
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+.Textover p{
+    font-size: 1rem;
+    margin: 0;
+}
+</style>
+<body>
+    <header class="navbar">
+        <div class="nav-left"> 
+            Movies
+        </div>
+       <div class="nav-center">
+        <img src="./hotstar iamge.jpg" alt="disney hotstar logo">
+       </div>
+       <div class="nav-right">
+        <a href="#">Home</a></li>
+       <a href="#">Gallery</a></li>
+        <a href="#">About</a></li>
+       <a href="#">contact</a></li>
+    </div>
+        </header>
+<div id="container">
+        <div class="arrow">
+            <img onclick="changeimg()"id="arrow1" src="./arrow.jpeg" alt="">
+            <img onclick="changeimg()"id= "arrow2" src="./arrow.jpeg" alt="">
+    </div>
+<div class="mini">
+ <img class="img active" src="./movie1.jpg" alt="loading">
+<img src="./movie2.jpg" alt="loading">
+<img src="./movie3.jpg" alt="loading">
+<img src="./movie4.jpg" alt="loading">
+</div>
+</div>
+ 
+<div class="Textover">
+<h1 id="title"></h1>
+<p id="desc"></p>
+</div>
+
+
+    <script src="practice.js" >
+        
+    </script>
+
+<div class="title1">
+    <h2>Top 10 In India-Tamil</h2>
+</div>
+<div class="cards1">
+
+    <div class="card1">
+        <img src="./movie1.jpg" alt="loading">
+        <p>panda family</p>
+    </div>
+    <div class="card1">
+        <img src="./movie2.jpg" alt="loading">
+
+    </div>
+    <div class="card1">
+        <img src="./movie3.jpg" alt="loading">
+       
+    </div>
+    <div class="card1">
+        <img src="./movie4.jpg" alt="loading">
+
+    </div>
+    <div class="card1">
+        <img src="./touristfamily.jpg" alt="loading">
+        
+    </div>
+</div>
+</div>
+<div class="title2">
+    <h2>International Hits</h2>
+</div>
+<div class="cards2">
+
+    <div class="card2">
+        <img src="./ef1.jpg" alt="loading">
+        
+    </div>
+    <div class="card2">
+        <img src="./ef2.jpg" alt="loading">
+
+    </div>
+    <div class="card2">
+        <img src="./ef3.jpg" alt="loading">
+       
+    </div>
+    <div class="card2">
+        <img src="./ef4.jpg" alt="loading">
+
+    </div>
+    <div class="card2">
+        <img src="./ef5.jpg" alt="loading">
+        
+    </div>
+</div>
+</div>
+<div class="title3">
+    <h2>Kids Corner</h2>
+</div>
+<div class="cards3">
+
+    <div class="card3">
+        <img src="./kc.jpg" alt="loading">
+        
+    </div>
+    <div class="card3">
+        <img src="./kc1.jpg" alt="loading">
+
+    </div>
+    <div class="card3">
+        <img src="./kc3.jpg" alt="loading">
+       
+    </div>
+    <div class="card3">
+        <img src="./kc4.jpg" alt="loading">
+
+    </div>
+    <div class="card3">
+        <img src="./kc5.jpg" alt="loading">
+        
+    </div>
+</div>
+</div>
+<div class="title4">
+    <h2>Popular In Mythology</h2>
+</div>
+<div class="cards4">
+
+    <div class="card4">
+        <img src="./gi1.jpg" alt="loading">
+        
+    </div>
+    <div class="card4">
+        <img src="./gi2.jpg" alt="loading">
+
+    </div>
+    <div class="card4">
+        <img src="./gi3.jpg" alt="loading">
+       
+    </div>
+    <div class="card4">
+        <img src="./gi4.jpg" alt="loading">
+
+    </div>
+    <div class="card4">
+        <img src="./gi5.jpg" alt="loading">
+        
+    </div>
+</div>
+</div>
+<div class="title5">
+    <h2>Languages</h2>
+</div>
+<div class="cards5">
+
+    <div class="card5">
+        <img src="./la1.jpg" alt="loading">
+        
+        
+    </div>
+    <div class="card5">
+        <img src="./lg2.jpg" alt="loading">
+        
+
+    </div>
+    <div class="card5">
+        <img src="./lg3.jpg" alt="loading">
+    
+       
+    </div>
+    <div class="card5">
+        <img src="./lg4.jpg" alt="loading">
+         
+    </div>
+    <div class="card5">
+        <img src="./lg5.jpg" alt="loading">
+        
+        </div>
+</div>
+</div>
+<div class="title6">
+    <h2>Popular Genres</h2>
+</div>
+<div class="cards6">
+
+    <div class="card6">
+        <img src="./pg1.jpg" alt="loading">
+        
+        
+    </div>
+    <div class="card6">
+        <img src="./pg2.jpg" alt="loading">
+        
+
+    </div>
+    <div class="card6">
+        <img src="./pg3.jpg" alt="loading">
+       
+    </div>
+    <div class="card6">
+        <img src="./pg4.jpg" alt="loading">
+
+    </div>
+    <div class="card6">
+        <img src="./pg5.jpg" alt="loading">
+        
+    </div>
+</div>
+</div>
+<div class="title7">
+    <h2>Channels</h2>
+</div>
+<div class="cards7">
+
+    <div class="card7">
+        <img src="./pc.jpg" alt="loading">
+        
+    </div>
+    <div class="card7">
+        <img src="./pc1.jpg" alt="loading">
+
+    </div>
+    <div class="card7">
+        <img src="./pc3.jpg" alt="loading">
+       
+    </div>
+    <div class="card7">
+        <img src="./pc4.jpg" alt="loading">
+
+    </div>
+    <div class="card7">
+        <img src="./pc5.jpg" alt="loading">
+        
+    </div>
+</div>
+</div>
+</body>
+</html>
+<div class="title8">
+    <h2>Studios</h2>
+</div>
+<div class="cards8">
+
+    <div class="card8">
+        <img src="./s1.jpg" alt="loading">
+        
+    </div>
+    <div class="card8">
+        <img src="./s2.jpg" alt="loading">
+
+    </div>
+    <div class="card8">
+        <img src="./s3.jpg" alt="loading">
+       
+    </div>
+    <div class="card8">
+        <img src="./s4.jpg" alt="loading">
+
+    </div>
+    <div class="card8">
+        <img src="./s5.jpg" alt="loading">
+        
+    </div>
+</div>
+</div>
+<div class="bg2">
+    <h2>New Releases</h2>
+    <div class="cards">
+      <div class="card"><img src="./spe1.jpg" alt="Movie 1"></div>
+      <div class="card"><img src="./spe2.jpg" alt="Movie 2"></div>
+      <div class="card"><img src="./spe3.jpg" alt="Movie 3"></div>
+      <div class="card"> <img src="./spe4.jpg" alt="Movie4"></div>
+    </div>
+  </div>
+   </div>
+   <footer>
+    <div class="footer-container">
+        <div class="footer-column">
+<h4>Company</h4>
+<p>About us</p>
+<p>Careers</p>
+    </div>
+    <div class="footer-column">
+<h4>Need Help ?</h4>
+<p>Visit Help Center</p>
+<p>Shre Feedback</p>
+    </div>
+<div class="footer-column">
+    <h4>View Website In</h4>
+    <p>English</p>
+</div>
+</div>
+<div class="footer-bottom">
+    <p>@2025 STAR. All Rights Reserved</p>
+    <p> Terms Of Use | Privacy| FAQ</p>
+</div>
+</footer>
+
+
+    </div>
+   
+</body>
+ </html>
